@@ -1,20 +1,27 @@
 #include <stdio.h>
 
-int main() {
-    int a = 1;
-    int b = 2;
-    int sum = 0;
+/**
+ * main - Prints the sum of the even-valued terms in the Fibonacci sequence
+ * whose values do not exceed 4,000,000
+ *
+ * Return: Always 0
+ */
 
-    while (b <= 4000000) {
-        int temp = b;
-        if (b % 2 == 0) {
-            sum += b;
+int main(void)
+{
+        int a = 1, b = 2, sum = 0;
+
+        while (b <= 4000000)
+        {
+                if (b % 2 == 0)
+                        sum += b;
+
+                int temp = b;
+                b += a;
+                a = temp;
         }
-        b = a + b;
-        a = temp;
-    }
 
-    printf("%d\n", sum);
+        printf("%d\n", sum);
 
-    return 0;
+        return (0);
 }

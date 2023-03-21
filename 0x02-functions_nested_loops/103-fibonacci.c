@@ -6,10 +6,10 @@ int main() {
     int sum = 0;
 
     while (b <= 4000000) {
+        int temp = b;
         if (b % 2 == 0) {
             sum += b;
         }
-        int temp = b;
         b = a + b;
         a = temp;
     }

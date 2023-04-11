@@ -22,7 +22,7 @@ char *argstostr(int ac, char **av)
 	{
 		for (j = 0; av[i][j]; j++)
 			len++;
-		total_len += len + 1 + 1; /* Add 1 for newline, 1 for null terminator */
+		total_len += len + 1;
 		len = 0;
 	}
 

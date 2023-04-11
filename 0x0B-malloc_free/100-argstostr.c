@@ -10,7 +10,6 @@
  * Return: Pointer to concatenated string on success, NULL on failure or if
  *         either @ac or @av is 0
  */
-
 char *argstostr(int ac, char **av)
 {
 	int i, j, len = 0, total_len = 0;

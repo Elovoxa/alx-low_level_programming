@@ -43,5 +43,11 @@ char *argstostr(int ac, char **av)
 	}
 	str[len] = '\0';
 
+	if (len != total_len - 1)
+	{
+		free(str);
+		return (NULL);
+	}
+
 	return (str);
 }
